@@ -17,25 +17,31 @@
         <div class="title-header">
             <h1 class="txt">Minesweeper</h1>
             <!-- <h2 class="waste">This is how much time you wasted: </h2> -->
+                
             <div class="time-header">
-            <div class="time-log">
+                <button class="btn btn restart" onclick="resetGame()">🙂</button>
+                <div class="time-log">
+                </div>
             </div>
-    </div>
-    </div>
-    <div class="table-container">
-        <table class="board" border="1">
-            <tbody class="board-cells">
+        </div>
+        <div class="table-container">
+            <table class="board" border="1">
+                <tbody class="board-cells">
 
-            </tbody>
-        </table>
-        <div class="buttons">
-            <button class="btn btn easy" onclick="playEasyLevel()">Easy</button>
-            <button class="btn btn medium" onclick="playMediumLevel()">Medium</button>
-            <button class="btn btn hard" onclick="playHardLevel()">Hard</button>
+                </tbody>
+            </table>
+            <div class="buttons">
+           
+                <button class="btn btn easy" onclick="playEasyLevel()">Easy</button>
+                <button class="btn btn medium" onclick="playMediumLevel()">Medium</button>
+                <button class="btn btn hard" onclick="playHardLevel()">Hard</button>
+            </div>
         </div>
     </div>
-    </div>
     <script src="js/main.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/bonuses.js"></script>
 
 </body>
 
