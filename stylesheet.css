@@ -1,0 +1,168 @@
+body{
+    text-align:center; 
+    margin:0; 
+    padding:0; 
+    background-color:rgb(27, 26, 26);
+
+}
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 36px;
+    margin:0px; 
+    color:#ffffff; 
+    box-sizing: border-box;
+    text-align:center; 
+}
+h2{
+    padding-top:5px; 
+    font-family: 'Share Tech Mono', monospace;
+    margin:0px; 
+    font-size: 24px;
+}
+.time-header{
+    padding-top:30px; 
+    background-color:#000000; 
+    height:60px;  
+    width:400px; 
+    margin:auto; 
+    text-align:center; 
+    position: relative; 
+}
+.title-header{
+    padding-top:30px; 
+    background-color:#000000; 
+    height:100px; 
+
+}
+
+.board{
+ 
+    position:relative; 
+    margin: auto;
+    width:400px; ; 
+    height:400px; 
+
+}
+
+.table-container{
+   top:25px;  
+    position:relative; 
+    width:400px ; 
+    height:400px; 
+    margin:auto; 
+
+}
+.show {
+    background-color:rgb(3, 197, 187); 
+    width:20px;         
+    height:20px; 
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.hide{
+    background-color:rgb(38, 175, 255); 
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    width:20px;         
+    height:20px; 
+}
+.board{
+  background-color:rgb( 219, 246, 245); 
+  border:10px;
+  border-collapse: separate;  
+  border-style:none; 
+}
+
+.board td:hover {
+    /* background-color:rgb(36, 206, 197);  */
+    cursor: pointer;
+}
+.btn:hover {
+    background-color:rgb(160, 157, 157); 
+    cursor: pointer;
+    color: #ffffff; 
+}
+
+.buttons{
+    width:100%; 
+    height:120px; 
+    margin:auto; 
+    position:relative;
+    text-align:center; 
+
+}
+.medium{
+    width:100px; 
+    height: 40px; 
+    color:#000000;  
+    margin-top:10px;
+    border-radius: 0.12em;
+    transition: all 0.2s;
+    border: 0; 
+    opacity: 0.8;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+}
+
+.btn{ 
+    background-color:rgb(38, 175, 255); 
+    
+     
+    
+}
+.restart{
+    margin-left:30px; 
+    margin-bottom:10px; 
+    width:100px; 
+    height: 40px; 
+    color:#000000;  
+    border-radius: 0.12em;
+    transition: all 0.2s;
+    border: 0; 
+    opacity: 0.8;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+}
+.easy{
+    width:100px; 
+    height: 40px; 
+    color:#000000;  
+    margin-top:10px;
+    border-radius: 0.12em;
+    transition: all 0.2s;
+    border: 0; 
+    opacity: 0.8;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+}
+.hard{
+    width:100px; 
+    height: 40px; 
+    color:#000000; 
+    margin-top:10px; 
+    border-radius: 0.12em;
+    transition: all 0.2s;
+    border: 0; 
+    opacity: 0.8;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+ 
+}
+
+.time-log{
+    float:right; 
+    margin:10px; 
+    margin:auto; 
+    font-family: 'Share Tech Mono', monospace;
+    color:#ffffff; 
+    font-size: 20px;
+    width: 105px;
+    height:20px;  
+    padding-right:30px;
+    padding-top:10px;   
+
+     
+}
+
