@@ -3,7 +3,7 @@ var MINE = '💣';
 const XLIFE = '💜';
 const HINT = '🔮';
 var DEAD = '😫';
-const COOL = '😎';
+var COOL = '😎';
 var HAPPY = '🙂';
 var EMPTY = '';
 var FLAG = '🚩';
@@ -31,11 +31,10 @@ var gTimeInterval;
 
 
 function init() {
-
-    // if (gTimeInterval) clearInterval(gTimeInterval);
-    gTime = 0;
+    var elCell = document.querySelector('.time-log');
+    elCell.innerText = "0"; 
     gBoard = buildBoard();
-    renderBoard();
+    renderBoard(gBoard);
     renderMines(gBoard);
     setMinesNegsCount(gBoard);
     gGame.isOn = true;
@@ -87,36 +86,42 @@ function renderBoard() {
 }
 
 
-function renderMines(board) {
+function renderMines(board,Idx) {
+    Idx = 0; 
     var numOfMines = gLevel.mines;
     for (var i = 0; i < numOfMines; i++) {
         var randomRow = getRandomInt(0, gLevel.size);
         var randomCol = getRandomInt(0, gLevel.size);
         var cell = board[randomRow][randomCol];
+        if(randomRow === Idx.i && randomCol === Idx.j){
+            numOfMines ++
+            continue; 
+        }
         if (cell.isMine) numOfMines++;
         cell.isMine = true;
-        cell.minesAroundCount = MINE; 
-       
+        console.log(randomRow)
+        console.log(randomCol)
+        console.log(cell)
+        // cell.minesAroundCount = MINE; 
     }
+
 }
 
 function playEasyLevel() {
     gLevel.size = 4;
     gLevel.mines = 2;
-    clearInterval(gTimeInterval)
+  
     resetGame()
 }
 function playMediumLevel() {
     gLevel.size = 8;
     gLevel.mines = 12;
-    var elCell = document.querySelector('.time-log');
-    elCell.innerText = "0"; 
+
     resetGame()
 }
 function playHardLevel() {
     gLevel.size = 12;
     gLevel.mines = 30;
-    clearInterval(gTimeInterval)
     resetGame()
 }
 
