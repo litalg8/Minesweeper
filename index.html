@@ -2,45 +2,49 @@
 <html lang="en">
 
 <head>
-    <style>
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MineSweeper</title>
-    <link rel="stylesheet" href="css/stylesheet.css" />
+    <!-- <link rel="stylesheet" href="css/stylesheet.css" /> -->
+    <link rel="stylesheet" href="css/main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body onload="init()">
     <div class="container">
-        <div class="title-header">
-            <h1 class="txt">Minesweeper</h1>
-            <!-- <h2 class="waste">This is how much time you wasted: </h2> -->
-                
-            <div class="time-header">
-                <button class="btn btn restart" onclick="resetGame()">🙂</button>
-                <div class="time-log">
-                </div>
-            </div>
+        <div class="header justify-center align-center">
+            <h1 class="txt top">Minesweeper</h1>
+            <ul class="controls-list flex align-center top">
+                <li> <button class="btn btn restart" onclick="resetGame()">🙂</button></li>
+                <li>
+                    <div class="time-log"></div>
+                </li>
+                <li>
+                    <div class="hints flex"></div>
+                </li>
+            </ul>
         </div>
         <div class="table-container">
             <table class="board" border="1">
                 <tbody class="board-cells">
-
                 </tbody>
             </table>
-            <div class="buttons">
-           
-                <button class="btn btn easy" onclick="playEasyLevel()">Easy</button>
-                <button class="btn btn medium" onclick="playMediumLevel()">Medium</button>
-                <button class="btn btn hard" onclick="playHardLevel()">Hard</button>
+            <!-- <section class="table-grid">
+                <div class="board-cells"></div>
+            </section> -->
+            <div class="buttons flex justify-center">
+                <button class="btn easy" onclick="setEasyLevel()">Easy</button>
+                <button class="btn medium" onclick="setMediumLevel()">Medium</button>
+                <button class="btn hard" onclick="setHardLevel()">Hard</button>
             </div>
         </div>
     </div>
+
     <script src="js/main.js"></script>
     <script src="js/user.js"></script>
     <script src="js/utils.js"></script>
+ 
 
 
 </body>
